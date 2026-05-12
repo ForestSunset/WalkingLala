@@ -1,2 +1,2 @@
 # WalkingLala
-走地姬 Walking Lala
+走地姬 WalkingLala
