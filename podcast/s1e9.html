@@ -80,12 +80,23 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--dark);displ
 .ep-nav-btn.right{text-align:right;}
 .ep-nav-btn.disabled{opacity:0.3;pointer-events:none;}
 @media(max-width:600px){nav{padding:0 1rem;}.page-wrap{padding-left:1.25rem;padding-right:1.25rem;}.ep-nav{flex-direction:column;}.ep-nav-btn{max-width:100%;}}
+
+.footer-inner { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; max-width:760px; margin:0 auto 2rem; }
+.footer-brand h2 { font-size:1.5rem; font-weight:900; margin-bottom:0.3rem; }
+.footer-brand .tagline { font-size:0.85rem; color:var(--yellow); font-weight:700; letter-spacing:0.08em; margin-bottom:0.4rem; }
+.footer-brand p { font-size:0.78rem; opacity:0.4; line-height:1.8; }
+.footer-links { display:flex; flex-direction:column; gap:0.55rem; }
+.footer-links a { color:rgba(255,255,255,0.55); text-decoration:none; font-size:0.82rem; font-weight:700; transition:color 0.2s; font-family:'Noto Sans SC','PingFang SC',sans-serif; }
+.footer-links a:hover { color:var(--pink); }
+.footer-bottom { border-top:1px solid rgba(255,255,255,0.1); padding-top:1.5rem; font-size:0.72rem; opacity:0.38; letter-spacing:0.04em; max-width:760px; margin-left:auto; margin-right:auto; }
+footer { position:relative; z-index:1; background:var(--dark); color:var(--cream); padding:3rem 2rem; border-top:3px solid var(--pink); }
+@media(max-width:600px){ footer { padding:2rem 1.5rem; } .footer-inner { flex-direction:column; } }
 </style>
 </head>
 <body>
 <nav>
   <a class="nav-logo" href="/">🐤 走地姬 <span class="en">Walking Lala</span></a>
-  <a class="nav-back" href="/">← 返回播客列表</a>
+  <a class="nav-back" href="/#podcast">← 返回播客列表</a>
 </nav>
 <div class="page-wrap">
   <div class="ep-header">
@@ -105,8 +116,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--dark);displ
     </audio>
     <div class="listen-btns">
       <a class="listen-btn" href="https://walkinglala.substack.com/p/b01" target="_blank" rel="noopener">📬 Substack</a>
-      <a class="listen-btn outline" href="https://www.xiaoyuzhoufm.com/podcast/66ac5c3733ddcbb53cc7f68c" target="_blank" rel="noopener">🎙 小宇宙</a>
-      <a class="listen-btn outline" href="https://podcasts.apple.com/gb/podcast/%E8%B5%B0%E5%9C%B0%E5%A7%ACwalkinglala/id1779020537" target="_blank" rel="noopener">🍎 Apple Podcasts</a>
+      <a class="listen-btn outline" href="https://www.xiaoyuzhoufm.com/episode/66b5a08633591c27bed2f19b" target="_blank" rel="noopener">🎙 小宇宙</a>
+      <a class="listen-btn outline" href="https://podcasts.apple.com/gb/podcast/%E8%B5%B0%E5%9C%B0%E5%A7%ACwalkinglala/id1779020537?i=1000676442211" target="_blank" rel="noopener">🍎 Apple Podcasts</a>
     </div>
   </div>
     <div class="route-intro">
@@ -137,5 +148,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--dark);displ
     <a class="ep-nav-btn right" href="/podcast/s1e10"><span class="ep-nav-dir">下一集 →</span><span class="ep-nav-name">B02 · 西厢房酒吧</span></a>
   </div>
 </div>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h2>走地姬 🐤</h2>
+      <div class="tagline">Lala Mode: On</div>
+      <p>Walking Lala<br>用行走书写酷儿女性的城市空间史</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.xiaoyuzhoufm.com/podcast/66ac5c3733ddcbb53cc7f68c" target="_blank">🎙 小宇宙</a>
+      <a href="https://podcasts.apple.com/gb/podcast/%E8%B5%B0%E5%9C%B0%E5%A7%ACwalkinglala/id1779020537" target="_blank">🍎 Apple Podcasts</a>
+      <a href="https://walkinglala.substack.com" target="_blank">📬 Substack（推荐订阅防失联）</a>
+      <a href="https://mp.weixin.qq.com/s/WnMTl6k4uRX7T9D7koofxQ" target="_blank">💬 微信公众号 · 走地姬 LalaWalking</a>
+      <a href="https://xhslink.com/m/GZutcluQyE" target="_blank">📷 小红书 · 走地姬 WalkingLala</a>
+      <a href="mailto:walkinglala.art@gmail.com">✉️ walkinglala.art@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 走地姬 WalkingLala · 内容版权归创作者所有 · 转载使用请注明来源</div>
+</footer>
 </body>
 </html>
